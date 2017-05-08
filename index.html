@@ -48,9 +48,29 @@
     
     <h2>最後にネットを使ったインタビュー！</h2>
     <br>
-    <p>趣味はありますか？<br>
-     <input type="radio" name="input11" value="Yes" checked>もちろん、あるよ
-     <input type="radio" name="input11" value="No" checked>ないない、そんなものうちにはないよ</p>
-    
+    <from id="top" action="#" method="post">
+     <p>趣味はありますか？
+      <input type="radio" name="syumi_Yes" value="Yes" checked>もちろん、あるよ
+      <input type="radio" name="syumi_No" value="No" checked>ないない、そんなものうちにはないよ</p>
+     <br>
+     <p>趣味は何ですか？
+      <input type="checkbox" name="syumi_F" value="fishing" checked>釣り
+      <input type="checkbox" name="syumi_T" value="tsundere" checked>ツンデレ
+      <input type="cehckbox" name="syumi_S" value="spy" checked>スパイ
+      <input type="cehckbox" name="syumi_O" value="sonoda" checked>その他
+     </p>
+     <p>この中はどう？
+      <select name="syumi_kokowa" multiple>
+      <option value="SAKURA">森山〇太朗のさくら熱唱
+      <option value="aisatsu">世界に向かってこんにちは！
+      <option value="brack">破壊神暗黒〇天王
+     </select></p>
+     <br>
+     <p>それ以外の趣味ってあるんですか？　何ですか？
+      <p>さぁ言えよ！さぁ！<input type="text" name="ore_no_syumi"></p>
+     <br><br>
+     <p>input type="submit" value="送信">
+       <input type="reset" value="取り消し"></p>
+    </from>
   </body>
 </html>
